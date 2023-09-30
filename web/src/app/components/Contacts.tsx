@@ -1,9 +1,17 @@
-import data from './Contacts.json'
+import { api } from '@/lib/api'
 
-export function Contacts(){
-
-  const contacts = Object.values(data.contacts)
-  const randomContact = contacts[parseInt(Math.random() * contacts.length)].number
+export async function Contacts(){
+  const response = await api.get('/contacts')
+  const registerId: string = response.data
+  const registerContact = await api.get('/contacts/' + registerId)
+  const contact: string = registerContact.data
+  // console.log(contact)
   
-  return randomContact
+  const update = await api.put('/contacts/' + registerId, {"isUsed": "1"})
+  update.data.json; 
+  return `${contact}`
+
 }
+
+
+

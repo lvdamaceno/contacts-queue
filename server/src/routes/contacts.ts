@@ -10,7 +10,7 @@ export async function contactsRoute(app: FastifyInstance) {
         isUsed: false,
       },
     })
-    return contacts
+    return contacts?.id
   })
 
   app.get('/contacts/:id', async (request) => {
