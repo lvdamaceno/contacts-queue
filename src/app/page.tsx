@@ -6,7 +6,7 @@ export default async function Home() {
     <div className="h-screen bg-zinc-900 text-zinc-50 flex items-center justify-center">
       <a 
       href={contactLink}
-      rel="noopener noreferrer"
+      // rel="noopener noreferrer"
       className=" text-xl font-mono rounded-xl p-5 bg-red-600 hover:bg-red-500">
         Inicie uma conversa
       </a>
