@@ -1,25 +1,16 @@
 'use client'
 
-// import {Message} from './components/Message'
+import Link from 'next/link'
 import {Redirect} from './components/Redirect'
 
-// export default async function Home() {
 export default function Home() {
-  // const contactLink = await Message()
   return (
     <div className="h-screen bg-zinc-900 text-zinc-50 flex items-center justify-center">
-      {/* <a 
-      className="wpplink text-xl font-mono rounded-xl p-5 bg-red-600 hover:bg-red-500 cursor-pointer"
-      href={contactLink}
-      // rel="noopener noreferrer"
-      >
-        Inicie uma conversa
-      </a> */}
-      <button onClick={Redirect}>
+      <Link href={"/"} rel="noopener noreferrer" onClick={Redirect}>
         <p className=" text-xl font-mono rounded-xl p-5 bg-red-600 hover:bg-red-500 cursor-pointer">
           Inicie uma conversa
         </p>
-      </button>
+      </Link>
     </div>
   )
 }
