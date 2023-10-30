@@ -9,10 +9,10 @@ export async function Redirect() {
     const registerContact = await api.get('/contacts/' + registerId)
     const contact = registerContact.data
 
-    const url = whatsapp_link + contact + message
-
     const update = await api.put('/contacts/' + registerId, {"isUsed": "1"})
     update.data.json; 
+
+    const url = whatsapp_link + contact + message
 
     window.open(url, "_self")
 }
