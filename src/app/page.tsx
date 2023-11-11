@@ -12,7 +12,6 @@ export default function Home() {
           Inicie uma conversa
         </p>
       </Link>
-      <Remaining />
     </div>
   )
 }
