@@ -14,7 +14,7 @@ export function Button() {
   return (
     <Link href={""} rel="noopener noreferrer" onClick={Redirect}>
         <p className=" text-4xl text-center rounded-xl p-5 bg-red-600 hover:bg-red-500 cursor-pointer">
-          {isClient ? 'Inicie uma conversa' : 'Inicie uma conversa'}
+          {isClient ? 'Nova conversa' : 'Nova conversa'}
         </p>
     </Link>
   )
