@@ -13,7 +13,7 @@ export function Button() {
 
   return (
     <Link href={""} rel="noopener noreferrer" onClick={Redirect}>
-        <p className=" text-xl rounded-xl p-5 bg-red-600 hover:bg-red-500 cursor-pointer">
+        <p className=" text-4xl text-center rounded-xl p-5 bg-red-600 hover:bg-red-500 cursor-pointer">
           {isClient ? 'Inicie uma conversa' : 'Inicie uma conversa'}
         </p>
     </Link>
