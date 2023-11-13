@@ -1,7 +1,13 @@
 import { api } from '@/lib/api'
 
-export async function Remaining() {
+export async function countRemaining() {
     const response = await api.get('/remaining')
-    const responseData = response.data
-    return <p className="text-sm">Contatos restantes: {responseData}</p>
+    const remainingContacts = response.data
+    return remainingContacts
+}
+
+export function Remaining() {
+    const number = countRemaining()
+    // console.log('Remaining: ' + number)
+    return number
 }
