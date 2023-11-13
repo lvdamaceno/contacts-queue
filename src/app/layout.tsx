@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto_Flex as Roboto } from 'next/font/google'
@@ -19,7 +20,10 @@ export default function RootLayout({
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${roboto.variable}font-sans`}>{children}</body>
+      <body className={`${roboto.variable}font-sans`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
