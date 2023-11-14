@@ -9,5 +9,8 @@ export async function countRemaining() {
 export function Remaining() {
     const number = countRemaining()
     // console.log('Remaining: ' + number)
-    return number
+    // return number
+    return (
+    <p className="text-lg">Contatos disponíveis: {number}</p>
+    )
 }

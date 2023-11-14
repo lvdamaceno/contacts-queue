@@ -9,5 +9,8 @@ export async function countUsed() {
 export function Used() {
     const number = countUsed()
     // console.log('Used: ' + number)
-    return number
+    // return number
+    return (
+    <p className="text-lg">Contatos efetuados: {number}</p>
+    )
 }
