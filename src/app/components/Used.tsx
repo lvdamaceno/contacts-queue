@@ -1,4 +1,5 @@
 import { api } from '@/lib/api'
+import ReactDOM from 'react-dom'
 
 export async function countUsed() {
     const response = await api.get('/countused')
@@ -8,10 +9,6 @@ export async function countUsed() {
 
 export function Used() {
     const number = countUsed()
-    // console.log('Used: ' + number)
-    // return number
-    return (
-    <p className="text-lg"> Contatos efetuados: {number}
-    </p>
-    )
+    const usedContacts = number.then(value => value)
+    return <p className="text-lg">Contatos efetuados: {usedContacts}</p>
 }
