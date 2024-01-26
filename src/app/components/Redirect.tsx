@@ -2,7 +2,7 @@ import { api } from '@/lib/api'
 
 export async function Redirect() {
     const whatsapp_link = "https://api.whatsapp.com/send?phone=55"
-    const message = "&text=%F0%9F%8E%89%F0%9F%8F%A0%20Transforme%20seu%20lar%20neste%20Natal%20com%20a%20Casa%20Contente!%20%F0%9F%8E%84%F0%9F%9B%8B%EF%B8%8F%20Aproveite%20m%C3%B3veis%20e%20eletrodom%C3%A9sticos%20incr%C3%ADveis%20e%20concorra%20a%20R$100.000%20em%20pr%C3%AAmios!%20%F0%9F%A4%91%F0%9F%8E%81%20Sorteio%20em%2023/12.%20N%C3%A3o%20perca!%20%F0%9F%8C%9F%F0%9F%8E%85%20%0AEntre%20em%20contato%20comigo%20para%20saber%20mais!%20"
+    const message = "&text=%0AOl%C3%A1,%20como%20vai?%20%F0%9F%98%8A%20Sou%20o%20vendedor%20da%20Casa%20Contente!%20%F0%9F%8F%A0%20Estou%20aqui%20para%20lembrar%20voc%C3%AA%20de%20dar%20uma%20passadinha%20em%20nossa%20loja%20e%20conferir%20nossas%20novidades!%20%F0%9F%8C%9F%20Se%20precisar%20de%20ajuda%20para%20consultar%20algum%20produto,%20conte%20comigo!%20Estou%20%C3%A0%20disposi%C3%A7%C3%A3o.%20%F0%9F%91%8D"
     
     const response = await api.get('/contacts')
     const responseData = response.data
